@@ -1,18 +1,20 @@
-# Promises + APIs - Countries
+# Intro to Client Routing
 
 ## The Assignment
 
-Use a promise library to request data from the [Rest Countries API](https://restcountries.eu/) and render an array of JSON data to the page. For each element, should render the flag, the
+Use a promise library to request data from the [Rest Countries API](https://restcountries.eu/). You will need to implement basic client side routing to make appropriate fetches to the API in order to render the correct data to the page when a user clicks on a 'language' button.
 
 
 ## Deliverables
+- an application that is build from the [webpack-simple-server](https://github.com/muktek/build--webpack-simple-server) starter kit:
 - an application that uses the superagent promise library to fetch JSON data from the Rest Countries API
+- an application that uses the director routing library to execute functions based on the current value in the route
 - JSON data rendered to the page as HTML
-- a github repository named `rest-countries-api-assignment`
+- a github repository named `rest-countries-client-routing`
 
 
 ### Mockup
-![demo](./mockups/countries-demo.png)
+![demo](./mockups/js-routing-demo.gif)
 
 
 ### Setup Instructions
@@ -21,34 +23,6 @@ Use a promise library to request data from the [Rest Countries API](https://rest
 mkdir ~/muktek/assignments/rest-countries-api-assignment
 cd ~/muktek/assignments/rest-countries-api-assignment
 ```
-
-2. Download assignment zip file in folder and unzip it.
-
-3. In `index.html` use the `<script>` tag to link to the superagent library and link to your javascrpt file (`./js/app.js`). Make sure you link to the superagent library first!.
-
-4. Make sure the superagent library is linked properly.
-```js
-console.log(superagent)
-```
-
-5. Store the superagent library into a variable called `request`
-```js
-const request = superagent
-```
+...
 
 ### Keys to success
-
-1. Make sure you can access the JSON data in the browser from the Rest Countries API.
-
-2. Request the data using the superagent promise library. Refer to the class demo if necessary.
-
-3. Convert each object from in the JSON array into a giant string where each object has this html format:
-```html
-<div class="country-card">
-  <img class="country-flag" src="[[ link-to-svg ]]" alt="flag">
-  <h4 class="country-name">[[ Country ]]</h4>
-  <p class="country-capital">[[ Capital ]]</p>
-</div>
-```
-
-4. Put the string on the DOM inside the `<div class="countries-container">` element 
