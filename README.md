@@ -10,7 +10,7 @@ Use a promise library to request data from the [Rest Countries API](https://rest
 - an application that uses the superagent promise library to fetch JSON data from the Rest Countries API
 - an application that uses the director routing library to execute functions based on the current value in the route
 - JSON data rendered to the page as HTML
-- a github repository named `rest-countries-client-routing`
+- a github repository named `client-side-routing-rest-countries`
 
 
 ### Mockup
