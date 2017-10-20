@@ -29,14 +29,14 @@ git clone git@github.com:muktek/build--webpack-simple-server.git client-side-rou
 cd client-side-routing-rest-countries
 
 # Clear the remote origin and create your own repo
-git remote origin master
+git remote remove origin
 hub create
 
 # Install default packages from package.json
 npm install
 
 # Add + Install packages necessary for project
-npm install superagent director
+npm install --save superagent director
 
 # Run dev server and checkout http://localhost:3000
 npm run dev
