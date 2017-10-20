@@ -44,3 +44,9 @@ npm run dev
 # Create production build (before pushing)
 npm run build:production
 ```
+
+Import superagent and director libraries in `src/clientApp/scripts/app.js`:
+```js
+import request from 'superagent'
+import {Router} from 'director/build/director'
+```
